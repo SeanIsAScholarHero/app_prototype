@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Institution - Ranking || Scholar Hero, Inc.</title>
+    <!-- css -->
+    <link href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/master.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- javascript -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Begin Ranking:Institution page -->
+    <div id="institution" data-role="page" data-add-back-btn="true">
+        <header data-role="header">
+            <h1>Scholar Hero</h1>
+        </header><!-- /header -->
+        <nav id="main-menu" data-role="navbar">
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="colleagues.html" title="Colleagues">Colleagues</a></li>
+                <li><a href="ranking.html" title="Ranking" class="ui-btn-active">Ranking</a></li>
+                <li><a href="fusion.html" title="Fusion">Fusion</a></li>
+            </ul>
+        </nav><!-- /nav#main-menu -->
+        <div class="ranking-profile">
+            <div class="ui-grid-a">
+                <div class="ui-block-a" style="width: 35%">
+                    <div class="ui-bar">
+                        <img src="assets/images/scholar_hero-logo.png" alt="Scholar Hero, Inc." width="80" height="80" />
+                    </div>
+                </div><!-- /.ui-block-a -->
+                <div class="ui-block-b" style="width: 65%">
+                    <div class="ui-bar">
+                        <h2>Universities participating in Scholarhero</h2>
+                    </div>
+                </div><!-- /.ui-block-b -->
+            </div><!-- /.grid-a -->
+        </div><!-- /.ranking-profile -->
+        <div class="content" data-role="content">
+            <form>
+                <div id="search-form" data-role="fieldcontain" class="ui-hide-label">
+                    <label for="search" class="ui-hide-label">Search:</label>
+                    <input type="search" name="search" id="search" />
+                </div>
+            </form>
+            <ul class="item-list" data-role="listview" data-inset="false" style="margin-top: 15px">
+<!--------------------------List Item 1 --------------------------------------->
+                <li>
+                    <a href="cmu.html" title="Xinzhu Zhang">
+                        <img src="assets/images/cmu.jpg" alt="Xinzhu Zhang" />
+                        <h3>CMU</h3>
+                        <p>
+                            Roger Dannenburgh,
+                            <span>Computer Science Dpt.</span>
+                        </p>
+                    </a>
+                </li>
+<!--------------------------List Item 1 --------------------------------------->
+                <li>
+                    <a href="http://brown.edu/" title="Ken Boyer">
+                        <img src="assets/images/brown.jpg" alt="Ken Boyer" />
+                        <h3>Brown University</h3>
+                        <p>
+                            Todd Winkler
+                            <span>Co-Director of MEME</span>
+                        </p>
+                        <p>
+                            Butch Rovan
+                            <span>Co-Director of MEME</span>
+                        </p>
+                        <p>
+                            Jim Moses
+                            <span>Lecturer and Technical Directer of MEME</span>
+                        </p>
+                    </a>
+                </li>
+<!--------------------------List Item 2 --------------------------------------->
+                <li>
+                    <a href="http://risd.edu/" title="Scholar Hero">
+                        <img src="assets/images/risd.jpg" alt="Scholar Hero" />
+                        <h3>Rhode Island School of Design (RISD)</h3>
+                        <p>
+                            University of Pittsburgh
+                            <span>doodad, PhD</span>
+                        </p>
+                    </a>
+                </li>
+            </ul><!-- /.item-list -->
+        </div><!-- /.content -->
+        <footer id="global-footer" data-role="footer">
+            <p>&copy; 2012 &mdash; 2013 Scholar Hero, Inc. All Rights Reserved.</p>
+        </footer><!-- /footer#global-footer -->
+    </div>
+    <!-- End Ranking:Institution page -->
+</body>
+</html>

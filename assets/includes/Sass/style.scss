@@ -1,0 +1,170 @@
+
+/*==================================================================
+====================== TABLE OF CONTENTS ===========================
+====================================================================
+
+1.  Imports               (@imports)
+2.  Mixins                (@mixins)
+3.  Variables             (@var)
+4.  Color Library         (@color)
+5.  Typography            (@typo)
+      a.  headings        (@h)
+6.  Base Styles           (@base)
+      a.  formatting  	  (@form)
+      b.  links           (@a)
+      c.  paragraph       (@p)
+7.  Home                  (@home)
+8.  Navigation            (@nav)
+9.  About                 (@about)
+10. Footer                (@foot)
+11. Contact               (@contact)
+
+*/
+
+/*========================= @IMPORTS ==============================*/
+@import "reset.scss";
+// @import "debugging.css";
+
+/*========================= @MIXINS ==============================*/
+@mixin fontNormal {
+	font-weight: normal;
+}
+@mixin fbold{
+	font-weight: bold;
+}
+/*========================= @COLOR LIBRARY =========================*/
+$sky: #E5F4FB;
+$yellow: #FEEEA0;
+$skin: #C8C38B;
+$polythene: #0F1D40;
+$newBlack: #000100;
+
+$p: $polythene;
+$h1Color: $newBlack;
+$h2Color: $newBlack;
+$h3Color: $newBlack;
+$background: $yellow;
+/*========================= OTHER @VARIABLES =======================*/
+
+
+/*========================= @TYPOGRAPHY ============================*/
+html, body {
+	font-family: 'LatoLight', sans-serif; 
+	font-size: 12px;
+	color: $p;
+	background-color: $background;
+}
+
+/*------------ @headings ---------------------*/
+h1 { 
+   	font: lato, $h1Color, 2.7em/1.3em;	
+    font-weight: bold;
+	color: $h1Color;     
+}
+h2 { 
+   	font: lato, $h1Color, 2.4em/1.1em;	
+    font-weight: normal;
+	color: $h2Color;     
+}
+h2 { color: $h2Color; font-weight: normal; }
+h3 { color: $h3Color; font-weight: normal; }
+
+
+/* ============================== @FORMATTING =================================== */
+
+
+.ui-bar-a {
+	border: none;
+	background: #FEEEA0;
+	color: $polythene;
+	font-weight: normal;
+}
+.ui-header .ui-title, .ui-footer .ui-title {
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	margin: auto;
+	padding: 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 0px;	
+}
+.ui-content {
+	background-color: $background;
+}
+.ui-header .ui-title {
+	font-size: 0px;
+}
+.ui-header .ui-btn-text {
+	color: $polythene;
+}
+.ui-header .ui-nav-bar .ui-grid-c {
+	background-color: #E5F4FB;	
+}
+
+.ui-header .ui-navbar .ui-grid-c {
+		/*background: url("images/collegue-icon-for-homepage-186.png");*/
+		background-color: $background;
+}
+
+/* .ui-block-a   .ui-btn-inner   */
+
+
+.ui-body-c, .ui-overlay-c {
+border: none;
+text-shadow: none;
+background: $background;
+}
+
+.centerizer {
+	text-align: center;
+	border: 0 auto;
+}
+
+/*========================= @ABOUT ==============================*/
+
+
+       html, body {
+            font-size: 12px;
+            line-height: 1.5em;
+        }
+        #slidePanel {
+            font-size: 14px;
+        }
+        .ui-panel {
+            width: 19.18em;
+        }
+        .ui-panel-position-left {
+            left: -19.18em;
+        }
+        /*** Animated: panel left open (for reveal and push) ***/
+        .ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal,
+        .ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push,
+        .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal,
+        .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-push {
+            -webkit-transform: translate3d(22.500em, 0, 0);
+            -moz-transform: translate3d(22.500em, 0, 0);
+            transform: translate3d(22.500em, 0, 0);
+        }
+        .center {
+            text-align: center;
+        }
+        .img-resp {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #333333;
+            margin: 0 auto 15px auto;
+        }
+        ul#academic-goals {
+            margin: 0;
+        }
+        ul#academic-goals li {
+            font-weight: 100;
+        }
+        ul#academic-goals li span {
+            font-weight: bold;
+        }
+        #global-footer {
+            text-align: center;
+        }

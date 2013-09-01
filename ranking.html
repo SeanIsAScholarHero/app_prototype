@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ranking || Scholar Hero, Inc.</title>
+    <!-- css -->
+    <link href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/master.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- javascript -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Begin Ranking page -->
+    <div id="ranking" data-role="page" data-add-back-btn="true">
+        <header data-role="header">
+            <h1>Scholar Hero</h1>
+        </header><!-- /header -->
+        <nav id="main-menu" data-role="navbar">
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="colleagues.html" title="Colleagues">Colleagues</a></li>
+                <li><a href="ranking.html" title="Ranking" class="ui-btn-active">Ranking</a></li>
+                <li><a href="fusion.html" title="Fusion">Fusion</a></li>
+            </ul>
+        </nav><!-- /nav#main-menu -->
+        <div class="ranking-profile">
+            <div class="ui-grid-a">
+                <div class="ui-block-a" style="width: 35%">
+                    <div class="ui-bar">
+                        <img src="assets/images/scholar_hero-logo.png" alt="Scholar Hero, Inc." width="80" height="80" />
+                    </div>
+                </div><!-- /.ui-block-a -->
+                <div class="ui-block-b" style="width: 65%">
+                    <div class="ui-bar">
+                        <h2>Scholar Hero</h2>
+                        <p>Current Level: <span>Champion</span></p>
+                        <p>Points: <span>Over 9,000</span></p>
+                    </div>
+                </div><!-- /.ui-block-b -->
+            </div><!-- /.grid-a -->
+        </div><!-- /.ranking-profile -->
+        <div class="content" data-role="content">
+            <form>
+                <div id="search-form" data-role="fieldcontain" class="ui-hide-label">
+                    <label for="search" class="ui-hide-label">Search:</label>
+                    <input type="search" name="search" id="search" />
+                </div>
+            </form>
+            <div class="my-breakpoint ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="colleagues-ranking.html" title="Colleagues" data-role="none">
+                        <div class="ui-bar ui-body-d">
+                            <h2>Colleagues</h2>
+                            <img src="assets/images/users_icon-48x48.png" alt="Colleagues" width="48" height="48" />
+                            <span>Rank 3</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="sitewide.html" title="Sitewide" data-role="none">
+                        <div class="ui-bar ui-body-d">
+                            <h2>Sitewide</h2>
+                            <img src="assets/images/globe_icon-48x48.png" alt="Sitewide" width="48" height="48" />
+                            <span>Rank 1,907</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="institution.html" title="Institution" data-role="none">
+                        <div class="ui-bar ui-body-d">
+                            <h2>Institution</h2>
+                            <img src="assets/images/home_icon-48x48.png" alt="Institution" width="48" height="48" />
+                            <span>Rank 65</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-d">
+                    <a href="field.html" title="Field" data-role="none">
+                        <div class="ui-bar ui-body-d">
+                            <h2>Field</h2>
+                            <img src="assets/images/lightbulb_icon-48x48.png" alt="Field" width="48" height="48" />
+                            <span>Rank 105</span>
+                        </div>
+                    </a>
+                </div>
+            </div><!-- /.my-breakpoint -->
+        </div><!-- /.content -->
+        <footer id="global-footer" data-role="footer">
+            <p>&copy; 2012 &mdash; 2013 Scholar Hero, Inc. All Rights Reserved.</p>
+        </footer><!-- /footer#global-footer -->
+    </div>
+    <!-- End Ranking page -->
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ranking || Scholar Hero, Inc.</title>
+    <!-- css -->
+    <link href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/master.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- javascript -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        html, body {
+            font-size: 12px;
+            line-height: 1.5em;
+        }
+        p {
+	        text-align: justify;
+	        padding: 2px;
+        }
+        #slidePanel {
+            font-size: 14px;
+        }
+        .ui-panel {
+            width: 19.18em;
+        }
+        .ui-panel-position-left {
+            left: -19.18em;
+        }
+        /*** Animated: panel left open (for reveal and push) ***/
+        .ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal,
+        .ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push,
+        .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal,
+        .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-push {
+            -webkit-transform: translate3d(22.500em, 0, 0);
+            -moz-transform: translate3d(22.500em, 0, 0);
+            transform: translate3d(22.500em, 0, 0);
+        }
+        .center {
+            text-align: center;
+        }
+        .img-resp {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto 15px auto;
+        }
+        ul#academic-goals {
+            margin: 0;
+        }
+        ul#academic-goals li {
+            font-weight: 100;
+        }
+        ul#academic-goals li span {
+            font-weight: bold;
+        }
+        #global-footer {
+            text-align: center;
+        }
+    </style>
+    <!-- javascript -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $("#slidePanel").trigger( "updatelayout" );
+    </script>
+
+</head>
+
+<body>
+    <!-- Begin Ranking page -->
+    <div id="ranking" data-role="page" data-add-back-btn="true">
+        <header data-role="header">
+            <h1>Scholar Hero</h1>
+        </header><!-- /header -->
+        <nav id="main-menu" data-role="navbar">
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="colleagues.html" title="Colleagues">Colleagues</a></li>
+                <li><a href="ranking.html" title="Ranking" class="ui-btn-active">Ranking</a></li>
+                <li><a href="fusion.html" title="Fusion">Fusion</a></li>
+            </ul>
+        </nav><!-- /nav#main-menu -->
+
+          <div class="content" data-role="content">
+            <h2>About Us</h2>
+            <p><img class="img-resp" src="images/swpgh-banner.jpg" alt="Startup Weekend Pittsburgh" />Initially conceptualized at <em>Startup Weekend Pittsburgh</em> in the fall of 2012 as "Academica," <strong>Scholar Hero</strong> began as a conversation between several individuals interested in making a difference in education by helping scholars professionalize themselves online. Several months later, <strong>Scholar Hero, Inc.</strong> officially filed for S-corporation status.</p>
+            <h3>Incubation</h3>
+            <p>Starting in 2013, <strong>Scholar Hero</strong> was accepted as one of the top applications for incubation at <em>The Hustle Den</em>, Pittsburgh’s newest incubation space, which is organized and managed by the <em>Thrill Mill, Inc.</em> – a Pennsylvania non-profit organization currently preparing its federal 501(c)(3) filing status.</p>
+            <p><img class="img-resp" src="images/hustle-den_logo.png" alt="Hustle Den" />Currently headquartered in Pittsburgh, Pennsylvania, <strong>Scholar Hero</strong> benefits from the modest cost of living as well as being surrounded by several of the top technical and research universities in the nation (e.g. Carnegie Mellon University and the University of Pittsburgh).</p>
+            <h3>Our goals, of course, are ACADEMIC:</h3>
+            <ul id="academic-goals" data-role="listview">
+                <li><span>Advocate</span> the concerns of all scholars</li>
+                <li><span>Constructive</span> feedback when one is brave to expose their work</li>
+                <li><span>Appreciate</span> the works of those who produce it</li>
+                <li><span>Distinguish</span> scholars who have earned their reputation as expect</li>
+                <li><span>Explore</span> new ways to better serve the scholarly community</li>
+                <li><span>Mentorship</span> should be a privilege, not a burden</li>
+                <li><span>Inspired</span> scholars should never doubt themselves</li>
+                <li><span>Create</span> spaces for scholars to meet, share, and collaborate safely and productively</li>
+            </ul><!-- /#academic-goals -->
+            <p>Now it is a company whose ambition is certainly great, yet we are vigilant in our mission to make a real difference in academic culture. The issues scholars face every day require serious thought, thus we must match the level of commitment that scholars have in their own work in order to succeed.</p>
+        </div><!-- /.content -->
+
+
+            <footer id="global-footer" data-role="footer">
+            <p>&copy; 2012 &mdash; 2013 Scholar Hero, Inc. All Rights Reserved.</p>
+        </footer><!-- /footer#global-footer -->
+    </div>
+    <!-- End Ranking page -->
+</body>
+</html>
